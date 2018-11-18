@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "express-mysql-sequelize-backend"
+		},
+		{
+			"path": "github-search"
+		}
+	],
+	"settings": {}
+}
