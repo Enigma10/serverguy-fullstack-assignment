@@ -4,7 +4,7 @@
 * ```cd express-mysql-sequelize-backend```
 * ```npm run start```
 
-## To Run Client (-Please make sure that client runs on localhost: 30001 )
+## To Run Client (-Please make sure that client runs on localhost: 3001 )
 * ```cd github-search```
 * ```npm run start```
 
