@@ -36,22 +36,10 @@ passport.use(new LocalStrategy(async (username, password, done) => {
 		} else {
 			emailOrUsername.email = username
 		}
-		// vikas1h		// console.log('emailOrUsername', )
-		if(Object.keys(emailOrUsername)[0] === 'username') {
-			const user = await User.findOne({
-				where: {
-					username: emailOrUsername.username
-				}
-			})
-		} else {
-			const user = await User.findOne({
-				where: {
-					email: emailOrUsername.email
-				}
-			})
-		}
-
-		const user = await User.findOne(emailOrUsername)
+		
+		const user = await User.findOne({
+			where: emailOrUsername
+		})
 		
 		if (!user) {
 			return done(new Error())
